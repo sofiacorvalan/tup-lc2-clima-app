@@ -1,0 +1,32 @@
+div.card {
+    border-radius: 35px;
+    border: transparent;
+    padding: 10px;
+    text-align: center;
+    margin: 35px;
+    box-shadow:3px 2px 12px 0px;
+    width: 230px;
+    height: 290px;
+}
+
+div.card p {
+    font-size: small;
+}
+
+.ultimo-p {
+    margin-bottom: 0px;
+}
+
+.form-index select {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.form-index input {
+     color: white;
+     padding: 10px;
+     border-radius: 10px;
+     border-color: transparent;
+     background-color: var(--color-theme);
+}

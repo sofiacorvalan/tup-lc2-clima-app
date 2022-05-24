@@ -1,0 +1,45 @@
+.form-help {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.form-help input {
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px;
+}
+
+.form-help textarea {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form-help label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.input-help {
+    display: flex;
+    justify-content: center;
+}
+
+.input-help input {
+    margin: 10px;
+    border-radius: 10px;
+    width: 70px;
+    background-color: var(--color-theme);
+    border-color: transparent;
+    color: white;
+}
+
+#button-help {
+    margin: 20px;
+    width: 45%;
+    height: 40px;
+    background-color: #dc3545;
+    border-radius: 10px;
+    border-color: transparent;
+    color: white;
+}

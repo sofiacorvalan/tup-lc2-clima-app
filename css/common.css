@@ -10,8 +10,7 @@
     --color-theme: #00594c;
     --color-active: #5df2d6;
     --color-back-active: #04957d;
-    --color-gradient: linear-gradient(to right, var(--color-theme),
-var(--color-back-active));
+    --color-gradient: linear-gradient(to right, var(--color-theme), var(--color-back-active));
 }
 
 body {
@@ -35,7 +34,11 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--color-theme);
+    background: linear-gradient(to right, var(--color-theme), var(--color-back-active));
+    border-radius: 35px;
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+    border-bottom: var(--color-active) solid;
 }
 
 nav>ul {
@@ -56,6 +59,10 @@ nav li a {
     font-size: 1em;
     font-weight: bold;
     color: var(--color-active);
+    border-radius: 10px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+
 }
 
 nav li.current-page a {
@@ -65,21 +72,25 @@ nav li.current-page a {
 }
 
 main {
-    margin-top: 120px;
+    margin-top: 90px;
     overflow: auto;
-    padding: 16px;
+    padding: 40px;
     padding-bottom: 60px;
     height: calc(100% - 120px);
 }
 
 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 0;
     color: white;
+    height: 65px;
 }
 
 h1>img {
-    width: 70px;
+    height: 100px;
     vertical-align: middle;
 }
 
@@ -89,31 +100,26 @@ h2 {
     text-align: center;
 }
 
-
 h3 {
     color: var(--color-theme);
-    margin: 8px 0;
+    margin-top: 0px;
 }
 
 main section {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer {
     position: fixed;
     bottom: 0px;
-    background: var(--color-theme);
     width: 100%;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-
-p.ayuda {
-    text-align: justify;
-    margin-left: 20%;
+    background: linear-gradient(to right, var(--color-theme), var(--color-back-active));
+    border-top: var(--color-active) solid 2px;
 }
 
 footer p {
@@ -124,6 +130,9 @@ footer p {
 main p {
     margin-bottom: 16px;
 }
+
+
+
 
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
 @media (min-width: 400px) {
