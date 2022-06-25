@@ -9,13 +9,14 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/add-city.css">
-    
+    <script src="js/common.js" defer></script>
+    <script src="js/pages/add-city.js" defer></script>
 
 </head>
 <body>
     <header>
         <h1>
-            <img src="img/clima_icon.ico" alt="">
+            <img src="img/clima_icon.ico" alt="logo clima">
             <span>Clima App</span>
         </h1>
         <nav>
@@ -35,14 +36,19 @@
                 <label for="IngresarCiudad">Ingrese la ciudad a agregar:</label>
                 <input type="text" name="IngresarCiudad" id="IngresarCiudad"/>
                 </br>
-                <input type="submit" value="Agregar" id="boton-agregar"/>
+                <button type="button" id="botonAgregar">Agregar</button>
             </form>
         </section>
         <section class="section-button">
-            <button id="button-1">Ciudad cargada con éxito.</button>
-            <button id="button-2">Error: La ciudad cargada no se encuentra en la API
-                o se produjo un error al consultar.</button>
-            <button id="button-3">La ciudad ingresada ya se encuentra almacenada.</button>
+           <div id="message-success">
+                <p>Ciudad cargada con éxito.</p>
+            </div>
+            <div id="message-error">
+                <p>Error: La ciudad cargada no se encuentra en la API o se produjo un error al consultar.</p>
+            </div>
+            <div id="message-repeat">
+                <p>La ciudad ingresada ya se encuentra almacenada.</p>
+            </div>
         </section>
     </main>
     <footer>

@@ -7,13 +7,14 @@ div.card {
     box-shadow:3px 2px 12px 0px;
     width: 230px;
     height: 290px;
+    display: block;
 }
 
 div.card p {
     font-size: small;
 }
 
-.ultimo-p {
+div.card:last-child {
     margin-bottom: 0px;
 }
 

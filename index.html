@@ -9,13 +9,14 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/index.css">
-    
+    <script src="js/common.js" defer></script>
+    <script src="js/pages/index.js" defer></script>
 
 </head>
 <body>
     <header>
         <h1>
-            <img src="img/clima_icon.ico" alt="">  
+            <img src="img/clima_icon.ico" alt="logo clima">  
             <span>Clima App</span>
         </h1>
         <nav>
@@ -34,23 +35,21 @@
             <form class="form-index">
                 <label for="SeleccionarCiudad"></label>
                 <select name="SeleccionarCiudad" id="SeleccionarCiudad" >
-                    <option disabled>Seleccionar Ciudad</option> 
-                    <option selected value="Rosario">Rosario</option>
-                    <option value="Rafaela">Rafaela</option>
+                    <option disabled selected>Seleccionar Ciudad</option> 
                 </select>
-                <input type="button" value="Consultar">
+                <input type="button" value="Consultar" id="Consultar">
             </form>
         </section>
         <section id="section-weather-result">
             <!-- Sección donde se debe mostrar el clima de la ciudad -->
             <div class="card">
-                <h3>Rosario</h3>
+                <h3 id="nombreCiudad"></h3>
                     <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Sol" width="100"/>
-                        <p>Temperatura: 13.76°</p>
-                        <p>Sensación térmica: 12.91°</p>
-                        <p>Humedad: 66%</p>
-                        <p>Velocidad del viento: 2.06km/h</p>
-                        <p class="ultimo-p">Presión: 1024 P</p>
+                        <p id="temp"></p>
+                        <p id="feels_like"></p>
+                        <p id="humidity"></p>
+                        <p id="wind_speed"></p>
+                        <p id="pressure"></p>
             </div>
         </section>
     </main>

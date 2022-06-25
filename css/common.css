@@ -131,8 +131,15 @@ main p {
     margin-bottom: 16px;
 }
 
-
-
+button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 90px;
+    background-color: var(--color-theme);
+    border-color: transparent;
+    color: white;
+}
 
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
 @media (min-width: 400px) {
