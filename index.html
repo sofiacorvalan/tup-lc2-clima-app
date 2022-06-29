@@ -42,14 +42,20 @@
         </section>
         <section id="section-weather-result">
             <!-- Sección donde se debe mostrar el clima de la ciudad -->
-            <div class="card">
+            <div id="loaderCard">
+                <div class="loader"></div>
+            </div>
+            <div class="card" id="card">
                 <h3 id="nombreCiudad"></h3>
-                    <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Sol" width="100"/>
-                        <p id="temp"></p>
-                        <p id="feels_like"></p>
-                        <p id="humidity"></p>
-                        <p id="wind_speed"></p>
-                        <p id="pressure"></p>
+                  <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Sol" width="100" id="iconoClima"/>
+                    <p id="temp"></p>
+                    <p id="feels_like"></p>
+                    <p id="humidity"></p>
+                    <p id="wind_speed"></p>
+                    <p id="pressure"></p>
+            </div>
+            <div id = "ciudadInexistente">
+                <p>Ciudad no encontrada.</p>
             </div>
         </section>
     </main>

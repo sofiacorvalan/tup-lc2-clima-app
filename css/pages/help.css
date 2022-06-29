@@ -8,6 +8,7 @@
     height: 40px;
     border-radius: 5px;
     border: solid 1px;
+    padding: 10px;
 }
 
 .form-help textarea {
